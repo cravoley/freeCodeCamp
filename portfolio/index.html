@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body data-spy="scroll" data-target="#navbar">
+    <body data-spy="scroll" data-target="#navbar" data-offset="30">
         <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -50,27 +50,30 @@
                 </div>
             </section>
             <a rel="nofollow" name="portfolio" class="anchor"  id="portfolio"></a>
-            <section class="row">
+            <section class="row portfolio">
                 <header>
                     <h2>Portfolio</h2>
                 </header>
                 <div class="col-xs-4">
-                    <img class="img-responsive" src="https://dummyimage.com/330x300/292929/FFFFFF" />
+                    <div class="img">
+                        <img class="img-responsive" src="./img/captures/diariodaregiao.png" />                        
+                    </div>
+                    <span>Hoje em dia</span>
                 </div>
                 <div class="col-xs-4">
-                    <img class="img-responsive" src="https://dummyimage.com/330x300/292929/FFFFFF" />
+                    <div class="img">
+                        <img class="img-responsive" src="./img/captures/diariodaregiao.png" />                        
+                    </div>
+                    <span>Hoje em dia</span>
                 </div>
                 <div class="col-xs-4">
-                    <img class="img-responsive" src="https://dummyimage.com/330x300/292929/FFFFFF" />
-                </div>
-                <div class="col-xs-4">
-                    <img class="img-responsive" src="https://dummyimage.com/330x300/292929/FFFFFF" />
-                </div>
-                <div class="col-xs-4">
-                    <img class="img-responsive" src="https://dummyimage.com/330x300/292929/FFFFFF" />
+                    <div class="img">
+                        <img class="img-responsive" src="./img/captures/diariodaregiao.png" />                        
+                    </div>
+                    <span>Hoje em dia</span>
                 </div>
             </section>
-            <a rel="nofollow" name="technologies" class="anchor"  id="tecnologies"></a>
+            <a rel="nofollow" name="technologies" class="anchor"  id="technologies"></a>
             <section class="row">
                 <article>
                     <header>
@@ -161,7 +164,7 @@
                             <span>Tomcat</span>
                         </div>        
                         <div class="col-xs-4 col-md-2">
-                            <img class="img-responsive" src="./img/logos/platform/tomcat.png" />
+                            <img class="img-responsive" src="./img/logos/platform/solr.png" />
                             <span>Solr</span>
                         </div>
                         <div class="col-xs-4 col-md-2">
@@ -186,9 +189,64 @@
             <a rel="nofollow" name="contact" class="anchor"  id="contact"></a>
             <section class="row">                
                 <header>
-                    <h2>Contact</h2>
+                    <h1>Contact</h1>
                 </header>
+                <main>
+                    <div class="col-xs-6">
+                        <form>
+                            <div class="form-group has-success has-feedback">
+                                <label class="control-label sr-only" for="inputSuccess1">Name</label>
+                                <input type="text" required="true" class="form-control" placeholder="Name" id="name">
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            </div>
+                            <div class="form-group has-warning has-feedback">
+                                <label class="control-label sr-only" for="email">Your e-mail</label>
+                                <input type="email" required="true" placeholder="Your e-mail" class="form-control" id="email">
+                                <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                            </div>
+                            <div class="form-group has-error has-feedback">
+                                <label class="control-label sr-only" for="message">Message</label>
+                                <textarea type="text" required="true" class="form-control" placeholder="Type your message here" id="message"></textarea>
+                                <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                                <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                            </div>
+                            <div class="has-success">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" id="checkboxSuccess" value="option1">
+                                        Checkbox with success
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="has-warning">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" id="checkboxWarning" value="option1">
+                                        Checkbox with warning
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="has-error">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" id="checkboxError" value="option1">
+                                        Checkbox with error
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn btn-default" type="submit">Button</button>
+                        </form>
+                    </div>
+                    <div class="col-xs-6">
+                        <h2>Want to get in touch with me?</h2>
+                        <p>
+                            This form <strong>won't send any e-mail</strong>. It was build as prof of concept only. If you want to get in touch with me,
+                            please get in touch by Facebook, LinkedIn or Twitter.
+                        </p>
+                    </div>
+                </main>
             </section>
         </main>
+        <script src="./scripts.js"></script>
     </body>
 </html>
